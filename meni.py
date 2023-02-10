@@ -344,34 +344,41 @@ def brisanje_karte():
         for karta in sve_karte.values():
             if karta['obrisana'] == True:
                 lista.append(karta)
-        ispis_karte_lista(lista)
+        
         if unos == '1':
-            p = True
-            while(p):
-                unos = input('\n   Unesite broj karte koji zelite promjeniti: ')
-                for karta in sve_karte.values():
-                    if str(karta['broj_karte']) == unos:
-                        p = False
-                        karta['obrisana'] = False
-                if p:
-                    print('   Pogresan unos!')
-                else: print('          Uspjesna promjena!')
+            if len(lista) != 0:
+                ispis_karte_lista(lista)
                 p = True
-                unos1 = input('   Da li zelite promjeniti jos karti? ').lower()
-                if unos1 == 'da': p = True
-                else: p = False
+                while(p):
+                    unos = input('\n   Unesite broj karte koji zelite promjeniti: ')
+                    for karta in sve_karte.values():
+                        if str(karta['broj_karte']) == unos:
+                            p = False
+                            karta['obrisana'] = False
+                    if p:
+                        print('   Pogresan unos!')
+                    else: print('   Uspjesna promjena!')
+                    p = True
+                    unos1 = input('\n   Da li zelite promjeniti jos karti? ').lower()
+                    if unos1 == 'da': p = True
+                    else: p = False
+            else:
+                print('Ne postoje oznacene karte.')
         elif unos == '2':
-            lista = []
-            for karta in sve_karte.values():
-                if karta['obrisana'] == True: 
-                    lista.append(karta['broj_karte'])
-            for i in range(len(lista)):
-                del sve_karte[lista[i]]
-            print('\n   Uspjesno izbrisano!') 
+            if len(lista) != 0:
+                ispis_karte_lista(lista)
+                lista = []
+                for karta in sve_karte.values():
+                    if karta['obrisana'] == True: 
+                        lista.append(karta['broj_karte'])
+                for i in range(len(lista)):
+                    del sve_karte[lista[i]]
+                print('\n   Uspjesno izbrisano!') 
+            else: print('Ne postoje oznacene karte.')
         elif unos != '3':
             print('   Pogresan unos!\n')
             sleep(1)
-            brisanje_karte()
+            uvodna_poruka()
     karte.sacuvaj_karte(sve_karte, 'karte.csv', ',')
     unos = input('\n  Opcije:\n   1. Pretraga karti\n   2. Prikaz svih karti\n   3. Direktan unos\n   4. Izlaz\n   :')
     if unos == '1': 
@@ -385,7 +392,7 @@ def brisanje_karte():
         uvodna_poruka()
     elif unos != '3':
         print('Pogresan unos!')
-        brisanje_karte()
+        uvodna_poruka()
     try:
         broj_karte = int(input("\nUnesite broj karte koju zelite izbrisati: "))
     except:
@@ -684,7 +691,8 @@ def izvjestavanje():
             print("_"*80 + '\n\n' + ' '*23 + 'Lista prodanih za datum prodaje' + '\n' + "_"*80 + '\n')
             datum = input('Unesite datum prodaje (Y-M-d): ')
             try:
-                ispis_karte_lista(izvestaji.izvestaj_prodatih_karata_za_dan_prodaje(sve_karte, datum))
+                if len(izvestaji.izvestaj_prodatih_karata_za_dan_prodaje(sve_karte, datum))!=0:
+                    ispis_karte_lista(izvestaji.izvestaj_prodatih_karata_za_dan_prodaje(sve_karte, datum))
             except:
                 izvjestaji_pogresan_unos('Pogresan unos')
             izvjestaji_pogresan_unos('')
@@ -871,10 +879,10 @@ def pregled_nerealizovanih_letova():
         print('Nema nerealizovanih letova.')
         sleep(3)
         uvodna_poruka()
-    print("Br leta" + ' '*5 + 'Datum pocetka i kraja operativnosti' + ' '*8 + 'Cena\n')
+    print(' '*13 + "Br leta" + ' '*8 + 'Datum pocetka i kraja operativnosti' + ' '*8 + 'Cena\n')
     for i in range(0, len(lista_nerealizovanih)):
         d = lista_nerealizovanih[i]
-        print(d['broj_leta'] + ' '*4, d['datum_pocetka_operativnosti'], ' '*2, d['datum_kraja_operativnosti'], ' '*3 + str(d['cena']))
+        print(' '*13, d['broj_leta'], ' '*4, d['datum_pocetka_operativnosti'], ' '*2, d['datum_kraja_operativnosti'], ' '*3 + str(d['cena']))
     unesite_bilo_koji_karakter()
 
 def pretraga_letova():
@@ -1175,6 +1183,7 @@ def izlaz():
     print('_'*80)
     print (f"\n{'Hvala sto ste izabrali nasu aplikaciju!':^80}")
     print('_'*80)
+    sleep(10)
     exit()
 
 #--------------------------------------------------------------------------------------------main
