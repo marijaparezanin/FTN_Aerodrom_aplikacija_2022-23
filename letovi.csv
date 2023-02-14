@@ -1,0 +1,61 @@
+broj_leta,sifra_polazisnog_aerodroma,sifra_odredisnog_aerodorma,vreme_poletanja,vreme_sletanja,sletanje_sutra,prevoznik,dani,model,cena,datum_pocetka_operativnosti,datum_kraja_operativnosti
+
+RS01,BEG,DUB,12:00,13:00,False,AirBiH,"[1, 2, 3]","{'id': 1, 'broj_redova': 5, 'naziv': 'L-44', 'pozicije_sedista': ['A', 'B', 'C', 'D', 'E']}",1500.0,2023-10-10 12:00:00,2023-10-28 00:00:00
+
+RS02,BEG,ATH,06:30,07:30,False,Air Serbia,"[0, 4, 6]","{'id': 1, 'broj_redova': 5, 'naziv': 'L-44', 'pozicije_sedista': ['A', 'B', 'C', 'D', 'E']}",2050.0,2024-03-03 00:00:00,2024-03-30 00:00:00
+
+RS03,BEG,BGM,09:00,10:15,False,Air Serbia,"[0, 1, 2]","{'id': 1, 'broj_redova': 5, 'naziv': 'L-44', 'pozicije_sedista': ['A', 'B', 'C', 'D', 'E']}",3060.0,2023-10-10 00:00:00,2024-03-03 00:00:00
+
+RS04,BEG,BOS,12:00,16:00,False,Air Serbia,"[0, 4, 6]","{'id': 1, 'broj_redova': 5, 'naziv': 'L-44', 'pozicije_sedista': ['A', 'B', 'C', 'D', 'E']}",10000.0,2023-10-10 00:00:00,2024-03-03 00:00:00
+
+RS05,BEG,ROM,19:00,20:30,False,Air Serbia,"[0, 1, 2]","{'id': 1, 'broj_redova': 5, 'naziv': 'L-44', 'pozicije_sedista': ['A', 'B', 'C', 'D', 'E']}",3070.0,2023-10-10 00:00:00,2024-03-03 00:00:00
+
+RS06,BEG,TYO,00:15,13:15,False,Air Serbia,"[0, 4, 6]","{'id': 1, 'broj_redova': 5, 'naziv': 'L-44', 'pozicije_sedista': ['A', 'B', 'C', 'D', 'E']}",13244.0,2023-10-10 00:00:00,2024-03-03 00:00:00
+
+RS07,BEG,TEM,10:00,11:00,False,Air Serbia,"[0, 1, 2]","{'id': 1, 'broj_redova': 5, 'naziv': 'L-44', 'pozicije_sedista': ['A', 'B', 'C', 'D', 'E']}",900.0,2023-10-10 00:00:00,2024-03-03 00:00:00
+
+RS08,BEG,ZRH,20:00,21:20,False,Air Serbia,"[0, 4, 6]","{'id': 1, 'broj_redova': 5, 'naziv': 'L-44', 'pozicije_sedista': ['A', 'B', 'C', 'D', 'E']}",3000.0,2023-10-10 00:00:00,2024-03-03 00:00:00
+
+RS09,BEG,BUD,10:00,11:00,False,Air Serbia,"[0, 1, 2]","{'id': 0, 'broj_redova': 5, 'naziv': 'M-43', 'pozicije_sedista': ['A', 'B', 'C', 'D', 'E']}",1500.0,2023-10-10 00:00:00,2024-03-03 00:00:00
+
+RS10,DUB,OPO,13:45,15:45,False,Air Serbia,"[0, 1, 2]","{'id': 0, 'broj_redova': 5, 'naziv': 'M-43', 'pozicije_sedista': ['A', 'B', 'C', 'D', 'E']}",8000.0,2023-10-10 00:00:00,2024-03-03 00:00:00
+
+RS11,BEG,BRU,10:15,13:15,False,Air Serbia,"[0, 1, 2]","{'id': 0, 'broj_redova': 5, 'naziv': 'M-43', 'pozicije_sedista': ['A', 'B', 'C', 'D', 'E']}",6000.0,2023-10-10 00:00:00,2024-03-03 00:00:00
+
+RS12,BEG,STO,08:00,10:00,False,Air Serbia,"[0, 1, 2]","{'id': 0, 'broj_redova': 5, 'naziv': 'M-43', 'pozicije_sedista': ['A', 'B', 'C', 'D', 'E']}",6000.0,2023-10-10 00:00:00,2024-03-03 00:00:00
+
+RS13,BEG,OSL,07:00,09:00,False,Air Serbia,"[0, 1, 2]","{'id': 0, 'broj_redova': 5, 'naziv': 'M-43', 'pozicije_sedista': ['A', 'B', 'C', 'D', 'E']}",8000.0,2023-10-10 00:00:00,2024-03-03 00:00:00
+
+RS14,BEG,HEL,06:00,08:00,False,Air Serbia,"[0, 1, 2]","{'id': 0, 'broj_redova': 5, 'naziv': 'M-43', 'pozicije_sedista': ['A', 'B', 'C', 'D', 'E']}",8000.0,2023-10-10 00:00:00,2024-03-03 00:00:00
+
+RS15,BEG,IND,01:00,07:00,False,Air Serbia,"[0, 1, 2]","{'id': 0, 'broj_redova': 5, 'naziv': 'M-43', 'pozicije_sedista': ['A', 'B', 'C', 'D', 'E']}",15000.0,2023-10-10 00:00:00,2024-03-03 00:00:00
+
+RS16,BEG,MOW,09:00,09:15,False,Air Serbia,"[0, 1, 2]","{'id': 0, 'broj_redova': 5, 'naziv': 'M-43', 'pozicije_sedista': ['A', 'B', 'C', 'D', 'E']}",6000.0,2024-09-10 00:00:00,2024-10-10 00:00:00
+
+RS17,BEG,SOF,11:15,12:15,False,Air Serbia,"[0, 1, 2]","{'id': 0, 'broj_redova': 5, 'naziv': 'M-43', 'pozicije_sedista': ['A', 'B', 'C', 'D', 'E']}",3000.0,2024-06-10 00:00:00,2024-07-02 00:00:00
+
+RS18,BEG,SIN,12:00,13:00,False,Air Serbia,"[0, 1, 2]","{'id': 0, 'broj_redova': 5, 'naziv': 'M-43', 'pozicije_sedista': ['A', 'B', 'C', 'D', 'E']}",1370.0,2024-10-10 00:00:00,2024-10-30 00:00:00
+
+RS19,DUB,SIN,14:00,15:00,False,Air Serbia,"[0, 1, 2]","{'id': 0, 'broj_redova': 5, 'naziv': 'M-43', 'pozicije_sedista': ['A', 'B', 'C', 'D', 'E']}",2000.0,2023-10-10 14:00:00,2023-10-28 15:00:00
+
+RS20,SAR,SIN,04:00,04:30,False,Air Serbia,"[0, 1, 2]","{'id': 0, 'broj_redova': 5, 'naziv': 'M-43', 'pozicije_sedista': ['A', 'B', 'C', 'D', 'E']}",2450.0,2024-10-10 00:00:00,2024-10-20 00:00:00
+
+RS21,POD,SIN,04:00,06:00,False,Air Serbia,"[0, 1, 2]","{'id': 0, 'broj_redova': 5, 'naziv': 'M-43', 'pozicije_sedista': ['A', 'B', 'C', 'D', 'E']}",3650.0,2024-10-10 00:00:00,2024-10-20 00:00:00
+
+RS22,MOS,SIN,15:00,19:50,False,Air Serbia,"[0, 1, 2]","{'id': 0, 'broj_redova': 5, 'naziv': 'M-43', 'pozicije_sedista': ['A', 'B', 'C', 'D', 'E']}",1000.0,2024-10-10 00:00:00,2024-10-22 00:00:00
+
+RS23,FIN,SIN,17:00,19:40,False,Air Serbia,"[0, 1, 2]","{'id': 0, 'broj_redova': 5, 'naziv': 'M-43', 'pozicije_sedista': ['A', 'B', 'C', 'D', 'E']}",1900.0,2024-10-10 00:00:00,2024-10-22 00:00:00
+
+RS24,NYC,SIN,15:00,18:00,False,Air Serbia,"[0, 1, 2]","{'id': 0, 'broj_redova': 5, 'naziv': 'M-43', 'pozicije_sedista': ['A', 'B', 'C', 'D', 'E']}",1400.0,2024-10-10 00:00:00,2024-10-22 00:00:00
+
+RS25,BER,SIN,12:00,14:00,False,Air Serbia,"[0, 1, 2]","{'id': 0, 'broj_redova': 5, 'naziv': 'M-43', 'pozicije_sedista': ['A', 'B', 'C', 'D', 'E']}",2200.0,2024-10-10 00:00:00,2024-10-12 00:00:00
+
+RS26,SYD,SIN,11:00,13:00,False,Air Serbia,"[0, 1, 2]","{'id': 0, 'broj_redova': 5, 'naziv': 'M-43', 'pozicije_sedista': ['A', 'B', 'C', 'D', 'E']}",3020.0,2024-10-10 00:00:00,2024-10-12 00:00:00
+
+RS27,PAR,SIN,10:00,15:00,False,Air Serbia,"[0, 1, 2]","{'id': 0, 'broj_redova': 5, 'naziv': 'M-43', 'pozicije_sedista': ['A', 'B', 'C', 'D', 'E']}",900.0,2024-10-10 00:00:00,2024-10-12 00:00:00
+
+RS28,BEG,DUB,13:00,19:00,False,Air Serbia,"[0, 1, 2]","{'id': 0, 'broj_redova': 5, 'naziv': 'M-43', 'pozicije_sedista': ['A', 'B', 'C', 'D', 'E']}",3500.0,2023-10-10 12:00:00,2023-10-28 00:00:00
+
+RS29,DUB,PAR,12:00,13:00,False,AirBiH,"[1, 2, 3, 4, 5, 6]","{'id': 0, 'broj_redova': 5, 'naziv': 'M-43', 'pozicije_sedista': ['A', 'B', 'C', 'D', 'E']}",1300.0,2023-02-04 12:00:00,2023-02-14 12:00:00
+
+
